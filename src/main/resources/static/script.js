@@ -33,6 +33,10 @@ let glutenEighthCityXl = document.querySelector('.about-gluten-container-xl > di
 let glutenNinthCityXl = document.querySelector('.about-gluten-container-xl > div:nth-child(2) > div:first-child > div:nth-child(3) > div:nth-child(5) > span:nth-child(2)');
 let glutenLineSwitchXl = true;
 
+setTimeout(() => {
+    alert('This website is currently under construction and is only visually presentable in desktop view. I included it to showcase a more e-commerce type of layout and allow real-time update observations.');
+}, 1000);
+
 window.addEventListener('scroll', () => {
     veganIconRectTopXl = veganIconXl.getBoundingClientRect().top;
     veganBottomRectangleRectTopXl = veganBottomRectangleXl.getBoundingClientRect().top;
