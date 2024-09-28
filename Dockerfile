@@ -1,8 +1,5 @@
-# Use OpenJDK as the base image for building
-FROM openjdk:17 AS build
-
-# Install Maven
-RUN apt-get update && apt-get install -y maven
+# Use the Maven image which includes OpenJDK 17
+FROM maven:3.8.6-openjdk-17 AS build
 
 WORKDIR /app
 
