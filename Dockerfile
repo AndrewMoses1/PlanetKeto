@@ -1,5 +1,5 @@
-# Use the appropriate OpenJDK version
-FROM openjdk:17 AS build
+# Use the appropriate OpenJDK version with Maven
+FROM maven:3.8.6-openjdk-17 AS build
 
 WORKDIR /app
 
